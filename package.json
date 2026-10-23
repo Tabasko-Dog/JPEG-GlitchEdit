@@ -1,0 +1,19 @@
+{
+  "name": "jpeg-hex-editor",
+  "version": "1.0.0",
+  "description": "JPEG hex editor desktop app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win --x64"
+  },
+  "build": {
+    "appId": "com.clade.jpeghexeditor",
+    "productName": "JPEG GlichEdit",
+    "files": ["main.js", "preload.js", "index.html"],
+    "win": { "target": "nsis", "icon": null }
+  },
+  "author": "Clade",
+  "dependencies": {},
+  "devDependencies": { "electron": "^33.0.0", "electron-builder": "^25.0.0" }
+}
